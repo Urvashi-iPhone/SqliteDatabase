@@ -15,6 +15,8 @@
 		ADA236E81E0A58B300B75E10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA236E61E0A58B300B75E10 /* LaunchScreen.storyboard */; };
 		ADA236F31E0A58B300B75E10 /* SqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA236F21E0A58B300B75E10 /* SqliteTests.m */; };
 		ADA236FE1E0A58B300B75E10 /* SqliteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA236FD1E0A58B300B75E10 /* SqliteUITests.m */; };
+		ADA2370D1E0A5BCF00B75E10 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA2370C1E0A5BCF00B75E10 /* DBManager.m */; };
+		ADA237101E0A655800B75E10 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA2370F1E0A655800B75E10 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		ADA236F91E0A58B300B75E10 /* SqliteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqliteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA236FD1E0A58B300B75E10 /* SqliteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteUITests.m; sourceTree = "<group>"; };
 		ADA236FF1E0A58B300B75E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA2370B1E0A5BCF00B75E10 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		ADA2370C1E0A5BCF00B75E10 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		ADA2370F1E0A655800B75E10 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA237101E0A655800B75E10 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				ADA236F11E0A58B300B75E10 /* SqliteTests */,
 				ADA236FC1E0A58B300B75E10 /* SqliteUITests */,
 				ADA236D61E0A58B300B75E10 /* Products */,
+				ADA2370E1E0A655700B75E10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +111,8 @@
 				ADA236DB1E0A58B300B75E10 /* AppDelegate.h */,
 				ADA236DC1E0A58B300B75E10 /* AppDelegate.m */,
 				ADA236DE1E0A58B300B75E10 /* ViewController.h */,
+				ADA2370B1E0A5BCF00B75E10 /* DBManager.h */,
+				ADA2370C1E0A5BCF00B75E10 /* DBManager.m */,
 				ADA236DF1E0A58B300B75E10 /* ViewController.m */,
 				ADA236E11E0A58B300B75E10 /* Main.storyboard */,
 				ADA236E41E0A58B300B75E10 /* Assets.xcassets */,
@@ -138,6 +147,14 @@
 				ADA236FF1E0A58B300B75E10 /* Info.plist */,
 			);
 			path = SqliteUITests;
+			sourceTree = "<group>";
+		};
+		ADA2370E1E0A655700B75E10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADA2370F1E0A655800B75E10 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +293,7 @@
 				ADA236E01E0A58B300B75E10 /* ViewController.m in Sources */,
 				ADA236DD1E0A58B300B75E10 /* AppDelegate.m in Sources */,
 				ADA236DA1E0A58B300B75E10 /* main.m in Sources */,
+				ADA2370D1E0A5BCF00B75E10 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
